@@ -120,15 +120,18 @@ console.log (arrayFill(1, 4));
 /*Дан массив с числами. Узнайте сколько элементов с начала массива надо сложить, чтобы в сумме получилось больше 10-ти.*/
 
 var arr3 = [1, 4, 8, 15];
-var s = 0;
+var numberElement = 0;
 var element = 0;
 for (var m=0; m<arr3.length; m++) {
-   element += arr3[m];  
-   s++;   
+   element = element + arr3[m];
+    numberElement++; 
+    if (element>10) {
+       console.log(numberElement)
+        break;
+    }     
 }
- if (element>10) {
-        console.log(s)
-    }
+ 
+
 /*Дан массив с числами. Создайте из него новый массив, где останутся лежать только положительные числа. Создайте для этого вспомогательную функцию isPositive(), которая параметром будет принимать число и возвращать true, если число положительное, и false - если отрицательное.*/
 var arr4 = [5, 8, -2, 3, -4];
 function isPositive(x) {
