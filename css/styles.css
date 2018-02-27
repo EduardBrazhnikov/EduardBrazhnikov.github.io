@@ -1,0 +1,51 @@
+.row {
+    display: flex;
+    flex-flow: row wrap;
+}
+#bloc1 {
+    background: linear-gradient(to top, #808080, #A9A9A9);
+    width: 10%;
+    height: 100%;
+    padding: 1em;
+}
+#bloc2 {
+    width: 75%;
+    height: 100%;
+    padding: 2em;
+}
+.header {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 2em;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #A9A9A9, #C0C0C0);
+    border-radius: 7%;
+}
+.footer {
+    flex-wrap: wrap;
+    padding: 2em;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #696969, #A9A9A9);
+    border-radius: 7%;
+}
+.korzina {
+    float: right;
+}
+#inp1, #inp2 {
+    width: 100px;
+}
+.image {
+    width: 200px;
+    height: 200px;
+}
+p {
+    margin-top: 0;
+  float: left;  
+}
+#bloc3 {
+    
+    display: inline-block;
+    width: 30%;
+}
