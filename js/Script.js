@@ -1,4 +1,7 @@
 "use strict"
+var korzina = document.getElementsByClassName('korzina')[0];
+var cardBlock = document.getElementsByClassName('card-container')[0];
+var popup = document.getElementsByClassName('popup')[0];
 str.forEach(function(item){
     if (item.Availability == true){
         var Availability = 'Есть в наличии';
@@ -11,9 +14,34 @@ str.forEach(function(item){
         '<img class="image" src="'+item.img+'"/>' +
         '<br>'+ '<div>'+item.price+'$</div>'+
 		'<br>'+ '<div>'+Availability+'</div>'+
-        '<br>'+'<input id="but2" type="button" value="Добавить в корзину">'
+        '<br>'+'<input class="btns" type="button" value="Добавить в корзину" ddd="'+item.name+'">'
 	bloc2.innerHTML += otdelniyDiv
 })
+/*вывод в корзину*/
+var btns = document.getElementsByClassName('btns')
+console.log(btns);
+var arr = []
+for(var i = 0;i < btns.length;i++){
+	arr[i] = btns[i]
+}
+console.log(arr);
+arr.forEach(function(item){
+	item.onclick = function(){
+		var currentGoodName = this.getAttribute('ddd')
+		var currentGood = str.filter(function(item){
+			return item.name == currentGoodName
+		})
+		cardBlock.innerHTML +='<div id="korz">'+
+    '<img class="img2" src="'+currentGood[0].img+'"/>' +  
+    ' ' + currentGood[0].name + ' ' +
+    '<div class="div3">'+
+    'Цена:'+ ' ' + currentGood[0].price +
+    '</div>'+ ' ' +
+    '<img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png">'+
+    '</div>' +
+    '<br>'
+    }
+}) 
 
 
 but.onclick = function(){
@@ -39,13 +67,38 @@ if (document.getElementById('Availability').checked){
         '<img class="image" src="'+item.img+'"/>' +
         '<br>'+ '<div>'+item.price+'$</div>'+
 		'<br>'+ '<div>'+Availability+'</div>'+
-        '<br>'+'<input id="but2" type="button" value="Добавить в корзину">'
+        '<br>'+'<input class="btns" type="button" value="Добавить в корзину" ddd="'+item.name+'">'
 		bloc2.innerHTML += otdelniyDiv
 	})
+    /*вывод в корзину*/
+    var btns = document.getElementsByClassName('btns')
+console.log(btns);
+var arr = []
+for(var i = 0;i < btns.length;i++){
+	arr[i] = btns[i]
+}
+console.log(arr);
+arr.forEach(function(item){
+	item.onclick = function(){
+		var currentGoodName = this.getAttribute('ddd')
+		var currentGood = str.filter(function(item){
+			return item.name == currentGoodName
+		})
+		cardBlock.innerHTML +='<div id="korz">'+
+    '<img class="img2" src="'+currentGood[0].img+'"/>' +  
+    ' ' + currentGood[0].name + ' ' +
+    '<div class="div3">'+
+    'Цена:'+ ' ' + currentGood[0].price +
+    '</div>'+  ' ' +
+    '<img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png">'+
+    '</div>' +
+    '<br>'
+    }
+})  
     
 }
     
-      
+ /*условие если галочка не чекед*/     
 else {
    var arr = str.filter(function(item){
 		return (item.price>=min && item.price <= max)
@@ -63,12 +116,51 @@ else {
         '<img class="image" src="'+item.img+'"/>' +
         '<br>'+ '<div>'+item.price+'$</div>'+
 		'<br>'+ '<div>'+Availability+'</div>'+
-        '<br>'+'<input id="but2" type="button" value="Добавить в корзину">'
+        '<br>'+'<input class="btns" type="button" value="Добавить в корзину" ddd="'+item.name+'">'
 		bloc2.innerHTML += otdelniyDiv
 	}) 
-}	
-   
+    /*вывод в корзину*/
+    var btns = document.getElementsByClassName('btns')
+console.log(btns);
+var arr = []
+for(var i = 0;i < btns.length;i++){
+	arr[i] = btns[i]
 }
+console.log(arr);
+arr.forEach(function(item){
+	item.onclick = function(){
+		var currentGoodName = this.getAttribute('ddd')
+		var currentGood = str.filter(function(item){
+			return item.name == currentGoodName
+		})
+		cardBlock.innerHTML +='<div id="korz">'+
+    '<img class="img2" src="'+currentGood[0].img+'"/>' +  
+    ' ' + currentGood[0].name + ' ' +
+    '<div class="div3">'+
+    'Цена:'+ ' ' + currentGood[0].price +
+    '</div>'+  ' ' +
+    '<img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png">'+
+    '</div>' +
+    '<br>'
+    }
+})      
+    }  
+}
+function korzinaHandler(){
+	console.dir(cardBlock)
+	if(cardBlock.style.display === 'none'){
+		cardBlock.style.display = 'block'
+		popup.style.display = 'block'
+	}
+}
+function popupHandler(){
+	cardBlock.style.display = 'none'
+	popup.style.display = 'none'
+}
+korzina.onclick = korzinaHandler
+popup.onclick = popupHandler
+
+
 
 
 

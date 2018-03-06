@@ -32,6 +32,7 @@
 }
 .korzina {
     float: right;
+    cursor: pointer;
 }
 #inp1, #inp2 {
     width: 100px;
@@ -48,4 +49,45 @@ p {
     
     display: inline-block;
     width: 30%;
+}
+.card-container{
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    background-color: darkgray;
+    top: 14%;
+    left: 74.4%;
+    overflow-y: scroll;
+    z-index: 2;
+}
+.popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255,255,255,0.5);
+    z-index:1;
+}
+#korz {
+    border: 2px solid;
+    color: black;
+    text-align: left;
+}
+.img2 {
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+}
+#img3 {
+    float: right;
+    width: 20px;
+    height: 20px;
+    padding-top: 3%;
+}
+.div3 {
+  display: inline-block;
+  font-weight: 600;
+  padding-top: 4%;
 }
