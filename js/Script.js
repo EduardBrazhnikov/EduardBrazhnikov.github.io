@@ -28,20 +28,64 @@ console.log(arr);
 arr.forEach(function(item){
 	item.onclick = function(){
 		var currentGoodName = this.getAttribute('ddd')
+        var goods = cardBlock.children
+        
+        for(var i = 0; i < goods.length; i++){
+			if(goods[i].getAttribute('ddd') == currentGoodName){
+				goods[i].children[4].value = parseInt(goods[i].children[4].value,10) + 1
+				return
+			}
+		}
+
+        
 		var currentGood = str.filter(function(item){
 			return item.name == currentGoodName
 		})
-		cardBlock.innerHTML +='<div id="korz">'+
-    '<img class="img2" src="'+currentGood[0].img+'"/>' +  
-    ' ' + currentGood[0].name + ' ' +
-    '<div class="div3">'+
-    'Цена:'+ ' ' + currentGood[0].price +
-    '</div>'+ ' ' +
-    '<img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png">'+
-    '</div>' +
-    '<br>'
+        
+        /*Отображение в корзине*/
+        var imgK = document.createElement('img');
+        imgK.className = "img2";
+        imgK.src = currentGood[0].img;
+        var imgX = document.createElement('img');
+        imgX.className = "img3";
+        imgX.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png";
+        var Bigdiv = document.createElement('div');
+        Bigdiv.className = "korz0";
+        Bigdiv.setAttribute('ddd',currentGoodName);
+        var divK = document.createElement('div');
+        divK.className = "korz";
+        var divK1 = document.createElement('div');
+        divK1.className = "korz1";
+        var divK2 = document.createElement('div');
+        divK2.className = "korz2";
+        var divK3 = document.createElement('div');
+        divK3.className = "korz3";
+        var inp = document.createElement('input')
+		inp.setAttribute('type', 'number')
+        inp.className = "korz3";
+		inp.value = 1
+        divK.innerHTML += currentGood[0].name;
+        divK1.innerHTML = "Цена:";
+		divK2.innerHTML += currentGood[0].price;
+        Bigdiv.append(imgK, divK, " ", divK1, divK2, " ", "Кол-во:", " ",inp, imgX);
+        cardBlock.append(Bigdiv);
+        
+        imgX.onclick = function(){
+        Bigdiv.remove();
+        }
+        
+//		cardBlock.innerHTML +='<div id="korz">'+
+//    '<img class="img2" src="'+currentGood[0].img+'"/>' +  
+//    ' ' + currentGood[0].name + ' ' +
+//    '<div class="div3">'+
+//    'Цена:'+ ' ' + currentGood[0].price +
+//    '</div>'+ ' ' +
+//    '<img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png">'+
+//    '</div>' +
+//    '<br>'
     }
 }) 
+
 
 
 but.onclick = function(){
@@ -81,22 +125,67 @@ console.log(arr);
 arr.forEach(function(item){
 	item.onclick = function(){
 		var currentGoodName = this.getAttribute('ddd')
+        var goods = cardBlock.children
+        
+        for(var i = 0; i < goods.length; i++){
+			if(goods[i].getAttribute('ddd') == currentGoodName){
+				goods[i].children[4].value = parseInt(goods[i].children[4].value,10) + 1
+				return
+			}
+		}
+
+        
 		var currentGood = str.filter(function(item){
 			return item.name == currentGoodName
 		})
-		cardBlock.innerHTML +='<div id="korz">'+
-    '<img class="img2" src="'+currentGood[0].img+'"/>' +  
-    ' ' + currentGood[0].name + ' ' +
-    '<div class="div3">'+
-    'Цена:'+ ' ' + currentGood[0].price +
-    '</div>'+  ' ' +
-    '<img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png">'+
-    '</div>' +
-    '<br>'
+        
+        /*Отображение в корзине*/
+        var imgK = document.createElement('img');
+        imgK.className = "img2";
+        imgK.src = currentGood[0].img;
+        var imgX = document.createElement('img');
+        imgX.className = "img3";
+        imgX.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png";
+        var Bigdiv = document.createElement('div');
+        Bigdiv.className = "korz0";
+        Bigdiv.setAttribute('ddd',currentGoodName);
+        var divK = document.createElement('div');
+        divK.className = "korz";
+        var divK1 = document.createElement('div');
+        divK1.className = "korz1";
+        var divK2 = document.createElement('div');
+        divK2.className = "korz2";
+        var divK3 = document.createElement('div');
+        divK3.className = "korz3";
+        var inp = document.createElement('input')
+		inp.setAttribute('type', 'number')
+        inp.className = "korz3";
+		inp.value = 1
+        divK.innerHTML += currentGood[0].name;
+        divK1.innerHTML = "Цена:";
+		divK2.innerHTML += currentGood[0].price;
+        Bigdiv.append(imgK, divK, " ", divK1, divK2, " ", "Кол-во:", " ",inp, imgX);
+        cardBlock.append(Bigdiv);
+        
+        imgX.onclick = function(){
+        Bigdiv.remove();
+        }
+        
+        
+//		cardBlock.innerHTML +='<div id="korz">'+
+//    '<img class="img2" src="'+currentGood[0].img+'"/>' +  
+//    ' ' + currentGood[0].name + ' ' +
+//    '<div class="div3">'+
+//    'Цена:'+ ' ' + currentGood[0].price +
+//    '</div>'+  ' ' +
+//    '<img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png">'+
+//    '</div>' +
+//    '<br>'
     }
 })  
     
 }
+    
     
  /*условие если галочка не чекед*/     
 else {
@@ -130,22 +219,67 @@ console.log(arr);
 arr.forEach(function(item){
 	item.onclick = function(){
 		var currentGoodName = this.getAttribute('ddd')
+        var goods = cardBlock.children
+        
+        for(var i = 0; i < goods.length; i++){
+			if(goods[i].getAttribute('ddd') == currentGoodName){
+				goods[i].children[4].value = parseInt(goods[i].children[4].value,10) + 1
+				return
+			}
+		}
+
+        
 		var currentGood = str.filter(function(item){
 			return item.name == currentGoodName
 		})
-		cardBlock.innerHTML +='<div id="korz">'+
-    '<img class="img2" src="'+currentGood[0].img+'"/>' +  
-    ' ' + currentGood[0].name + ' ' +
-    '<div class="div3">'+
-    'Цена:'+ ' ' + currentGood[0].price +
-    '</div>'+  ' ' +
-    '<img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png">'+
-    '</div>' +
-    '<br>'
+        
+        /*Отображение в корзине*/
+        var imgK = document.createElement('img');
+        imgK.className = "img2";
+        imgK.src = currentGood[0].img;
+        var imgX = document.createElement('img');
+        imgX.className = "img3";
+        imgX.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png";
+        var Bigdiv = document.createElement('div');
+        Bigdiv.className = "korz0";
+        Bigdiv.setAttribute('ddd',currentGoodName);
+        var divK = document.createElement('div');
+        divK.className = "korz";
+        var divK1 = document.createElement('div');
+        divK1.className = "korz1";
+        var divK2 = document.createElement('div');
+        divK2.className = "korz2";
+        var divK3 = document.createElement('div');
+        divK3.className = "korz3";
+        var inp = document.createElement('input')
+		inp.setAttribute('type', 'number')
+        inp.className = "korz3";
+		inp.value = 1
+        divK.innerHTML += currentGood[0].name;
+        divK1.innerHTML = "Цена:";
+		divK2.innerHTML += currentGood[0].price;
+        Bigdiv.append(imgK, divK, " ", divK1, divK2, " ", "Кол-во:", " ",inp, imgX);
+        cardBlock.append(Bigdiv);
+        
+        imgX.onclick = function(){
+        Bigdiv.remove();
+        }
+        
+        
+//		cardBlock.innerHTML +='<div id="korz">'+
+//    '<img class="img2" src="'+currentGood[0].img+'"/>' +  
+//    ' ' + currentGood[0].name + ' ' +
+//    '<div class="div3">'+
+//    'Цена:'+ ' ' + currentGood[0].price +
+//    '</div>'+  ' ' +
+//    '<img id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Deletion_icon.svg/620px-Deletion_icon.svg.png">'+
+//    '</div>' +
+//    '<br>'
     }
 })      
     }  
 }
+
 function korzinaHandler(){
 	console.dir(cardBlock)
 	if(cardBlock.style.display === 'none'){

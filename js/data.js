@@ -29,7 +29,7 @@ var str = [
 		"Availability": 1
 	},
 	{
-		"name": "Чебурашка",
+		"name": "Чебур",
 		"dicription": "Описание чебурашки",
 		"price": 400,
 		"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbD0KDfTrntpfMBGypA_Q6JHwPDT3um8ofeSIgEMnaD_VoWjU7",
