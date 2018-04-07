@@ -1,129 +1,93 @@
-.row {
-    display: flex;
-    flex-flow: row wrap;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', cursive;
+  background: url(b2.jpg);;
+  background-size: cover;
 }
-#bloc1 {
-    background: linear-gradient(to top, #808080, #A9A9A9);
-    width: 10%;
-    height: 100%;
-    padding: 1em;
+.head {
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
 }
-#bloc2 {
-    width: 75%;
-    height: 100%;
-    padding: 2em;
-}
-.header {
+.container2 {
     flex-wrap: wrap;
-    align-content: flex-start;
-    padding: 2em;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to top, #A9A9A9, #C0C0C0);
-    border-radius: 7%;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+    margin-top: 1%;
+    
+}
+.container1 {
+    margin: auto;
+    width: 80%;
+    min-height: 700px;
+    background-color:#DCDCDC;
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;
+    border: 2px solid;
+    border-radius: 5%;  
+}
+.div1 {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.div2 {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+.but1, .but2, .but4, .but5 {
+    width: 100px;
+    height: 30px;
+    background-color: #696969;
+    cursor: pointer;
+    border-radius: 10%;
+    text-align: center;
+    font-weight: 600; 
+    padding-top: 0.3em;
+}
+.but1:hover, .but2:hover, .but3:hover, .but4:hover, .but5:hover {
+   background-color: #1E90FF; 
+    cursor: pointer;
+    color: red;
+}
+.but2 {
+    font-size: 0.8em;
+}
+.but3 {
+    width: 100px;
+    height: 53px;
+    background-color: #696969;
+    cursor: pointer;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-top: 0.1em;
 }
 .footer {
-    flex-wrap: wrap;
-    padding: 2em;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(to top, #696969, #A9A9A9);
-    border-radius: 7%;
+    width: 250px;
+    margin: auto;
 }
-.korzina {
-    float: right;
+.en {
+    margin-left: 1%;
+    width: 2em;
+    height: 2em;
     cursor: pointer;
 }
-#inp1, #inp2 {
-    width: 100px;
+.ru {
+    width: 2.7em;
+    height: 2em;
+    cursor: pointer;
 }
-.image {
-    width: 200px;
-    height: 200px;
-}
-p {
-    margin-top: 0;
-  float: left;  
-}
-#bloc3 {
-    
-    display: inline-block;
-    width: 30%;
-}
-.card-container{
-    position: absolute;
-    width: 27%;
-    height: 30%;
-    background-color: darkgray;
-    top: 14%;
-    left: 72.6%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    z-index: 2;
-}
-.popup{
+.homeContentEn {
     display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(255,255,255,0.5);
-    z-index:1;
 }
-#korz {
-    border: 2px solid;
-    color: black;
-    text-align: left;
+.enMenu {
+     display: none;
 }
-.img2 {
-    width: 50px;
-    height: 50px;
-    vertical-align: middle;
+.carousel {
+    margin-top: -50px;
 }
-#img3 {
-    float: right;
-    width: 20px;
-    height: 20px;
-    padding-top: 3%;
-}
-.div3 {
-  display: inline-block;
-  font-weight: 600;
-  padding-top: 4%;
-}
-.korz0 {
-    width: 100%;
-    border: 2px solid;
-    background-color: dimgrey;
-    text-align: left;
-}
-.korz {
-    display: inline-block;
-    color: black;
-    font-weight: 600;
-    text-align: left;
-}
-.korz1 {
-    display: inline-block;
-    color: black;
-    text-align: left;
-}
-.korz2 {
-    display: inline-block;
-    color: black;
-    text-align: left;
-}
-.korz3 {
-    display: inline-block;
-    width: 50px;
-    text-align: left;
-}
-
-.img3 {
-    margin-right: 5px;
-    width: 20px;
-    height: 20px;
-    float: right;
-}
-
+ 
