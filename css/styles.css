@@ -36,6 +36,7 @@ body {
 .div2 {
     margin-top: 2%;
     margin-left: 2%;
+    width: 100%;
 }
 .but1, .but2, .but4, .but5 {
     width: 100px;
@@ -90,4 +91,5 @@ body {
 .carousel {
     margin-top: -50px;
 }
+
  
