@@ -43,7 +43,7 @@ body {
 .but1, .but2, .but4, .but5 {
     width: 100px;
     height: 30px;
-    background-color: #696969;
+    background-color: #4169E1;
     cursor: pointer;
     border-radius: 10%;
     text-align: center;
@@ -61,7 +61,7 @@ body {
 .but3 {
     width: 100px;
     height: 53px;
-    background-color: #696969;
+    background-color: #4169E1;
     cursor: pointer;
     border-radius: 10%;
     text-align: center;
