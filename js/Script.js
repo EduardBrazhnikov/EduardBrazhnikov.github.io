@@ -1,4 +1,4 @@
-﻿"use strict"
+"use strict"
 /*Это все неправильно но это первое что пришло на ум*/ 
 if (localStorage.getItem('lang') == 2) {  /*если язык en */
     $('.homeContent').css('display', 'none'); /*это прячим ру текст*/
@@ -55,5 +55,5 @@ $(document).ready(function() {
     $('input#input_text, textarea#textarea2').characterCounter();
   });
 $('#send').click(function () {
-    location.reload(); 
+    location.href = "Contacts.html";
 });

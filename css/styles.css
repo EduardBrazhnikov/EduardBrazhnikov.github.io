@@ -6,9 +6,11 @@ body {
   background-size: cover;
 }
 .head {
-    width: 20%;
-    height: 20%;
-    margin-left: 40%;
+    margin-left: 50%;
+}
+.head2 {
+    
+
 }
 .container2 {
     flex-wrap: wrap;
@@ -68,7 +70,7 @@ body {
     padding-top: 0.1em;
 }
 .footer {
-    width: 250px;
+    width: 170px;
     margin: auto;
 }
 .en {
@@ -91,5 +93,6 @@ body {
 .carousel {
     margin-top: -50px;
 }
+
 
  
