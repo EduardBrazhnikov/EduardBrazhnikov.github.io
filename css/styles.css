@@ -1,98 +1,179 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Comfortaa', cursive;
-  background: url(b2.jpg);;
-  background-size: cover;
+  font-family: 'IBM Plex Mono', monospace;  
 }
-.head {
-    margin-left: 50%;
-}
-.head2 {
-    
-
-}
-.container2 {
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: auto;
-    width: 80%;
-    margin-top: 1%;
-    
-}
-.container1 {
-    margin: auto;
-    width: 80%;
-    min-height: 700px;
-    background-color:#DCDCDC;
-    display:flex;
-    flex-direction: row;
-    align-items: stretch;
-    border: 2px solid;
-    border-radius: 5%;  
-}
-.div1 {
-    margin-top: 2%;
-    margin-left: 2%;
-}
-.div2 {
-    margin-top: 2%;
-    margin-left: 2%;
+.picture {
     width: 100%;
 }
-.but1, .but2, .but4, .but5 {
-    width: 100px;
-    height: 30px;
-    background-color: #4169E1;
-    cursor: pointer;
-    border-radius: 10%;
+.Kiev {
+    margin: auto;
+    width: 20%;
     text-align: center;
-    font-weight: 600; 
-    padding-top: 0.3em;
+    color: white;
+    font-size: 5em;
+}
+.div0 {
+    margin-left: 4%;
+    width: 10%;
+}
+.container1 {
+    width: 100%;
+    background-color: cornflowerblue;
+    display:flex;
+    flex-direction: row;
+    align-items: stretch; 
+}
+.container2 {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: stretch;  
+}
+.menu {
+    width: 20%;
+    background-color: bisque;
+}
+.text {
+    width: 100%;
+}
+.but1, .but2, .but3, .but4, .but5 {
+    margin-left: 4%;
+    margin-top: 4%;
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    border: 2px solid;
 }
 .but1:hover, .but2:hover, .but3:hover, .but4:hover, .but5:hover {
-   background-color: #1E90FF; 
+   background-color:darkgray;
     cursor: pointer;
-    color: red;
-}
-.but2 {
-    font-size: 0.8em;
-}
-.but3 {
-    width: 100px;
-    height: 53px;
-    background-color: #4169E1;
-    cursor: pointer;
-    border-radius: 10%;
-    text-align: center;
-    font-size: 0.8em;
     font-weight: 600;
-    padding-top: 0.1em;
 }
-.footer {
-    width: 170px;
-    margin: auto;
-}
-.en {
+p {
     margin-left: 1%;
-    width: 2em;
-    height: 2em;
-    cursor: pointer;
 }
-.ru {
-    width: 2.7em;
-    height: 2em;
-    cursor: pointer;
+span {
+    margin-left: 1%;
+    color: coral;
 }
-.homeContentEn {
-    display: none;
+.vetka1 {
+    display: inline-block;
+    
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-size: 2em;
+    text-align: center;
 }
-.enMenu {
-     display: none;
+.vetka2 {
+    display: inline-block;
+    margin-top: 0.5%;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    font-size: 2em;
+    text-align: center;
 }
-.carousel {
-    margin-top: -50px;
+.vetka3 {
+    display: inline-block;
+    margin-top: 0.5%;
+    width: 50px;
+    height: 50px;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 2em;
+    text-align: center;
 }
+.allblock {
+    margin-top: 10%;
+    margin-left: 1%;
+}
+.imageM {
+    display: inline-block;
+}
+.picture1 {
+    width: 100%;
+    padding-top: 3%;
+    text-align: center;
+}
+#jpg1 {
+    width: 80%;
+    height: 300px;
+}
+.picture2 {
+    display: inline-block;
+    width: 30%;
+    padding-top: 1%;
+}
+.picture3 {
+    display: inline-block;
+    width: 30%;
+    padding-top: 1%;
+}
+.picture4 {
+    display: inline-block;
+    width: 30%;
+    padding-top: 1%;
+}
+#jpg2 {
+    width: 100%;
+    height: 250px;
+}
+.alldiv {
+    text-align: center;
+}
+.table {
+    margin-top: 2%;
+    border-collapse: collapse;
+    margin-left: 1%;
+}
+#imA {
+   width: 20%;
+}
+.area {
+    margin-top: 1%;
+    text-align: center;
+}
+.forma {
+     margin-left: 5%;
+}
+.div1 {
 
-
+    width: 230px;
+    height: 400px;
+   float: left;
+}
  
+.image {
+cursor:pointer;
+}
+.popup {
+position: absolute;
+height:100%;
+width:100%;
+top:0;
+left:0;
+display:none;
+text-align:center;
+}
+.popup_bg {
+background:rgba(0,0,0,0.4);
+position:absolute;
+z-index:1;
+height:100%;
+width:100%;
+}
+.popup_img {
+position: relative;
+margin:0 auto;
+z-index:2;
+max-height:94%;
+max-width:94%;
+margin:1% 0 0 0;
+}
