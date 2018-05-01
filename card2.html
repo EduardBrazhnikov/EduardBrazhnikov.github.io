@@ -5,17 +5,18 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/styles.css"> 
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="js/jquery-3.3.1.js" defer></script>
-	<script src="data.js" defer></script>
+	<link rel="stylesheet" href="css/cardStyles.css">
+	<link rel="stylesheet" href="css/styles.css"> 
+	<script src="card.js" defer></script>
 	<script src="script.js" defer></script>
     <script type="text/javascript" src="js/materialize.min.js" defer></script>
 	
 </head>
 <body>
- <div class="row">
+<div class="row">
 <div class="col s2">
 <a id="back-top" class="btn-floating btn-large waves-effect waves-light red blue accent-3"><i class="material-icons">dehaze</i></a>
 <div class="round">0</div> 
@@ -34,8 +35,9 @@
 </div>
 </div>
 </div>
-<div class="row">
-<div class="col s8">
+<div class="col s12">
+<div class="del"><p>Очистить корзину</p></div><br>
+<div id="blocCard"></div>
 <div class="carousel">
     <a class="carousel-item" href="#one!"><img src="images/01.jpg"></a>
     <a class="carousel-item" href="#two!"><img src="images/02.jpg"></a>
@@ -44,61 +46,11 @@
     <a class="carousel-item" href="#five!"><img src="images/05.jpg"></a>
   </div>
 </div>
-<div class="col s4"><h2>Логотип</h2></div>
-</div>
 <div class="row">
-<h4>O нас</h4>
 <p class="flow-text">Мы успешно работаем на рынке Украины, России, Германии, США с 2009 года. 
 За прошедшее время мы успели разработать более 740 сайтов различной сложности и назначения. 
 С нами сотрудничают крупные международные компании, производственные заводы и фабрики, банки и страховые компании, компании работающие в сфере обслуживания. 
 Для всех клиентов у нас действуют одинаковые тарифы и одинаково качественный подход.</p>
-</div>
-<div class="row">
-<h4>Наши тарифы</h4>
-<div class="post">
-  <div class="post-top">
-    <a href="#">
-      <img src="images/01.jpg" class="post-top-img">
-    </a>
-    <p class="post-top-angle">Скидка</p>
-    <p class="post-top-price"><span>1000 &#8372;</span></p>
-  </div>
-  <div class="post-content">
-    <h3>Landing Page</h3>
-    <p>Продающий современный сайт</p>
-	<a class="waves-effect waves-light btn blue accent-3">Заказать</a>
-  </div>
-</div>
-<div class="post">
-  <div class="post-top">
-    <a href="#">
-      <img src="images/01.jpg" class="post-top-img">
-    </a>
-    <p class="post-top-angle">Скидка</p>
-    <p class="post-top-price"><span>2500 &#8372;</span></p>
-  </div>
-  <div class="post-content">
-    <h3>Каталог</h3>
-    <p>Каталог для товаров и услуг
-	</p>
-	<a class="waves-effect waves-light btn blue accent-3">Заказать</a>
-  </div>
-</div>
-<div class="post">
-  <div class="post-top">
-    <a href="#">
-      <img src="images/01.jpg" class="post-top-img">
-    </a>
-    <p class="post-top-angle">Скидка</p>
-    <p class="post-top-price"><span>5000 &#8372;</span></p>
-  </div>
-  <div class="post-content">
-    <h3>Интернет-магазин</h3>
-    <p>Решение для он-лайн коммерции
-	</p>
-	<a class="waves-effect waves-light btn blue accent-3">Заказать</a>
-  </div>
-</div>
 </div>
 </div>
 <div id="div12" class="col s2">
@@ -106,14 +58,7 @@
  <a id="btnC" class="btn-floating btn-large pulse blue accent-3"><i class="material-icons">call</i></a>
 </div>
 </div>
-<!-- <div class="row"> -->
-      <!-- <div class="header"><h1>Шапка</h1><a href="card.html"><img class="korzina" src="korzina.png" alert="korzina"></a> -->
-      <!-- </div> -->
-   <!-- <div id="bloc1"> -->
-      <!-- <h1>Меню</h1> -->
-   <!-- </div> -->
-      <!-- <div id="bloc2"></div> -->
-      <!-- <div class="footer"><h1>Подвал</h1></div> -->
-   <!-- </div> -->
+
+   
 </body>
 </html>
