@@ -7,12 +7,15 @@
   <script src="js/Script.js" defer></script>
     </head>
     <body>
-    <div class="form">
-   <form>
-    <input class="inp" type="text" required placeholder="Login"><br><br>
-    <input class="inp" type="password" required placeholder="Password"><br><br>
-    <input class="inp" type="button" value="Войти">    
-   </form>
-    </div>
+	 <div id="login-form">
+      <h1>АВТОРИЗАЦИЯ</h1>
+        <fieldset>
+            <form action="javascript:void(0);" method="get">
+                <input class="inp" type="text" required value="Login" onBlur="if(this.value=='')this.value='Login'" onFocus="if(this.value=='Login')this.value='' "> 
+                <input class="inp" type="password" required value="Password" onBlur="if(this.value=='')this.value='Password'" onFocus="if(this.value=='Password')this.value='' "> 
+                <input class="inp" type="submit" value="ВОЙТИ">
+            </form>
+        </fieldset>
+    </div> 
     </body>
 </html>
