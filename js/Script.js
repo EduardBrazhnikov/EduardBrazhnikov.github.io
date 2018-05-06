@@ -244,7 +244,7 @@ if (log.value == obj.login && pas.value == obj.password) {
 		location.reload(true);
 	}
 	var bigDiv3 = document.createElement('div');
-	bigDiv3.innerHTML = 'Личный кабинет'+ '<br>' + '<br>' + 'Я не протягиваю лапу за кислым исполкомовским рублём.' + '&nbsp;';
+	bigDiv3.innerHTML = '<h2>' + 'Личный кабинет пользователя:' +'&nbsp;'+ obj.login + '</h2>'+ '<br>' + '<br>';
 	bigDiv3.className = "bigDiv3";
 	btn2.onclick = function(){
 		bigDiv.remove();
