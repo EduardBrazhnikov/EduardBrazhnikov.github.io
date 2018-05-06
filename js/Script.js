@@ -162,11 +162,6 @@ if (log.value == obj.login && pas.value == obj.password) {
 	var opt3 = document.createElement('option');
 	opt3.innerHTML = '3 года';
 	opt3.setAttribute('value', '3');
-	
-	// for(var i = 0; i < sel.options.length; i++){
-	// console.log(i);
-	// console.log(sel.options[sel.selectedIndex].value);
-	// };
 	var td3 = document.createElement('td');
 	td3.innerHTML = '';
 	var td4 = document.createElement('td');
@@ -215,12 +210,35 @@ if (log.value == obj.login && pas.value == obj.password) {
 		location.reload(true);
 	}
 	var bigDiv2 = document.createElement('div');
-	bigDiv2.innerHTML = 'Личный кабинет'+ '<br>' + '<br>' + 'Ваш хостинг:' + '&nbsp;' + obj.hosting ;
+	bigDiv2.innerHTML = '<h2>' + 'Личный кабинет пользователя:' +'&nbsp;'+ obj.login + '</h2>'+ '<br>' + '<br>';
 	bigDiv2.className = "bigDiv2";
 	btn1.onclick = function(){
 		bigDiv.remove();
 		bigDiv3.remove();
-	document.body.appendChild(bigDiv2);
+		th1.innerHTML = 'Хостинг';
+		td1.innerHTML = obj.hosting;
+		document.body.appendChild(bigDiv2);
+		bigDiv2.appendChild(table);
+	table.appendChild(tr1);
+	tr1.appendChild(th1);
+	tr1.appendChild(th2);
+	tr1.appendChild(th3);
+	tr1.appendChild(th4);
+	table.appendChild(tr2);
+	tr2.appendChild(td1);
+	tr2.appendChild(td2);
+	tr2.appendChild(td3);
+	td3.appendChild(sel);
+	sel.appendChild(opt1);
+	sel.appendChild(opt2);
+	sel.appendChild(opt3);
+	tr2.appendChild(td4);
+	function changeOption(){
+	var deadline = sel.options[sel.selectedIndex].value;
+	var result = deadline * obj.costD;
+	td4.innerHTML = result;
+	};
+	sel.addEventListener("change", changeOption);
 	}
 	btn0.onclick = function(){
 		location.reload(true);
