@@ -1,5 +1,5 @@
 "use strict"
-// var obj = [{'login': 'Admin', 'password': '010101', 'domen': 'eduardbrazhnikov.githab.io', 'costd': 300, 'hosting': 'githab.io', 'costh': 300, 'datadom': '14.09.2018', 'datahost': '14.09.2018', 'id': '777'},
+// var obj = [{'login': 'Admin', 'password': '010101', 'domen': 'eduardbrazhnikov.githab.io', 'costd': 300, 'hosting': 'githab.io', 'costh': 150, 'datadom': '14.09.2018', 'datahost': '14.09.2018', 'id': '777'},
 // {'login': 'User', 'password': '020202', 'domen': 'eduardbrazhnikov.githab.io', 'costd': 300, 'hosting': 'githab.io', 'costh': 300, 'datadom': '14.09.2018', 'datahost': '14.09.2018', 'id': '888'}];
 var log = document.getElementsByClassName('inp')[0];
 var pas = document.getElementsByClassName('inp')[1];
@@ -108,18 +108,20 @@ if(localStorage.getItem('lk') == item.id){
 		bigDiv3.remove();
 		th1.innerHTML = 'Хостинг';
 		td1.innerHTML = item.hosting;
+		td2.innerHTML = item.costh;
 		td4.innerHTML = item.costh;
 		td5.innerHTML = item.datahost;
 		th2.innerHTML = 'Цена, грн/мес';
 		opt1.innerHTML = '1 мес';
+		opt1.setAttribute('value', '1');
 		opt2.innerHTML = '3 мес';
-		opt2.setAttribute('value', '3');
+		opt2.setAttribute('value', '1.2');
 		opt3.innerHTML = '6 мес';
-	    opt3.setAttribute('value', '6');
+	    opt3.setAttribute('value', '2');
 		opt4.innerHTML = '1 год';
-	    opt4.setAttribute('value', '12');
+	    opt4.setAttribute('value', '3.333333');
 		opt5.innerHTML = '2 года';
-	    opt5.setAttribute('value', '24');
+	    opt5.setAttribute('value', '6');
 		document.body.appendChild(bigDiv2);
 		bigDiv2.appendChild(table);
 	table.appendChild(tr1);
@@ -143,14 +145,38 @@ if(localStorage.getItem('lk') == item.id){
 	function changeOption(){
 	var deadline = sel.options[sel.selectedIndex].value;
 	var result = deadline * item.costh;
-	var result2 = result * 20 / 100;
-	td4.innerHTML = result + result2;
+	td4.innerHTML = result;
 	};
 	sel.addEventListener("change", changeOption);
 	}
 	
 	btn0.onclick = function(){  /*это клик*/
-      location.reload(true);    
+     bigDiv3.remove();
+		bigDiv2.remove();
+		th1.innerHTML = 'Домен';
+		td1.innerHTML = item.domen;
+		td2.innerHTML = item.costd;
+		td4.innerHTML = item.costd;
+		td5.innerHTML = item.datadom;
+		th2.innerHTML = 'Цена, грн';
+		opt1.innerHTML = '1 год';
+		opt1.setAttribute('value', '1');
+		opt2.innerHTML = '2 года';
+		opt2.setAttribute('value', '2');
+		opt3.innerHTML = '3 года';
+	    opt3.setAttribute('value', '3');
+		opt4.innerHTML = '4 года';
+	    opt4.setAttribute('value', '4');
+		opt5.innerHTML = '5 лет';
+	    opt5.setAttribute('value', '5');
+      	  document.body.appendChild(bigDiv);
+		  bigDiv.appendChild(table);
+		  function changeOption(){
+	var deadline = sel.options[sel.selectedIndex].value;
+	var result = deadline * item.costd;
+	td4.innerHTML = result;
+	};
+	sel.addEventListener("change", changeOption);
 	}                                              /*это клик*/
 	var bigDiv3 = document.createElement('div');
 	bigDiv3.innerHTML = '<h2>' + 'Личный кабинет пользователя:' +'&nbsp;'+ item.login + '</h2>'+ '<br>' + '<br>';
@@ -269,17 +295,19 @@ if (log.value == item.login && pas.value == item.password) {
 		th1.innerHTML = 'Хостинг';
 		td1.innerHTML = item.hosting;
 		td4.innerHTML = item.costh;
+		td2.innerHTML = item.costh;
 		td5.innerHTML = item.datahost;
 		th2.innerHTML = 'Цена, грн/мес';
 		opt1.innerHTML = '1 мес';
+		opt1.setAttribute('value', '1');
 		opt2.innerHTML = '3 мес';
-		opt2.setAttribute('value', '3');
+		opt2.setAttribute('value', '1.2');
 		opt3.innerHTML = '6 мес';
-	    opt3.setAttribute('value', '6');
+	    opt3.setAttribute('value', '2');
 		opt4.innerHTML = '1 год';
-	    opt4.setAttribute('value', '12');
+	    opt4.setAttribute('value', '3.333333');
 		opt5.innerHTML = '2 года';
-	    opt5.setAttribute('value', '24');
+	    opt5.setAttribute('value', '6');
 		document.body.appendChild(bigDiv2);
 		bigDiv2.appendChild(table);
 	table.appendChild(tr1);
@@ -303,13 +331,37 @@ if (log.value == item.login && pas.value == item.password) {
 	function changeOption(){
 	var deadline = sel.options[sel.selectedIndex].value;
 	var result = deadline * item.costh;
-	var result2 = result * 20 / 100;
-	td4.innerHTML = result + result2;
+	td4.innerHTML = result;
 	};
 	sel.addEventListener("change", changeOption);
 	}
 	btn0.onclick = function(){ /*это клик*/
-		location.reload(true);
+		bigDiv3.remove();
+		bigDiv2.remove();
+		th1.innerHTML = 'Домен';
+		td1.innerHTML = item.domen;
+		td2.innerHTML = item.costd;
+		td4.innerHTML = item.costd;
+		td5.innerHTML = item.datadom;
+		th2.innerHTML = 'Цена, грн';
+		opt1.innerHTML = '1 год';
+		opt1.setAttribute('value', '1');
+		opt2.innerHTML = '2 года';
+		opt2.setAttribute('value', '2');
+		opt3.innerHTML = '3 года';
+	    opt3.setAttribute('value', '3');
+		opt4.innerHTML = '4 года';
+	    opt4.setAttribute('value', '4');
+		opt5.innerHTML = '5 лет';
+	    opt5.setAttribute('value', '5');
+      	  document.body.appendChild(bigDiv);
+		  bigDiv.appendChild(table);
+		  function changeOption(){
+	var deadline = sel.options[sel.selectedIndex].value;
+	var result = deadline * item.costd;
+	td4.innerHTML = result;
+	};
+	sel.addEventListener("change", changeOption);
 	} /*это клик*/
 	var bigDiv3 = document.createElement('div');
 	bigDiv3.innerHTML = '<h2>' + 'Личный кабинет пользователя:' +'&nbsp;'+ item.login + '</h2>'+ '<br>' + '<br>';
