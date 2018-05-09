@@ -113,15 +113,15 @@ if(localStorage.getItem('lk') == item.id){
 		td5.innerHTML = item.datahost;
 		th2.innerHTML = 'Цена, грн/мес';
 		opt1.innerHTML = '1 мес';
-		opt1.setAttribute('value', '1');
+		opt1.setAttribute('value', '150');
 		opt2.innerHTML = '3 мес';
-		opt2.setAttribute('value', '1.2');
+		opt2.setAttribute('value', '180');
 		opt3.innerHTML = '6 мес';
-	    opt3.setAttribute('value', '2');
+	    opt3.setAttribute('value', '300');
 		opt4.innerHTML = '1 год';
-	    opt4.setAttribute('value', '3.333333');
+	    opt4.setAttribute('value', '500');
 		opt5.innerHTML = '2 года';
-	    opt5.setAttribute('value', '6');
+	    opt5.setAttribute('value', '900');
 		document.body.appendChild(bigDiv2);
 		bigDiv2.appendChild(table);
 	table.appendChild(tr1);
@@ -144,8 +144,7 @@ if(localStorage.getItem('lk') == item.id){
 	tr2.appendChild(td5);
 	function changeOption(){
 	var deadline = sel.options[sel.selectedIndex].value;
-	var result = deadline * item.costh;
-	td4.innerHTML = result;
+	td4.innerHTML = deadline;
 	};
 	sel.addEventListener("change", changeOption);
 	}
@@ -177,14 +176,21 @@ if(localStorage.getItem('lk') == item.id){
 	td4.innerHTML = result;
 	};
 	sel.addEventListener("change", changeOption);
-	}                                              /*это клик*/
+	}  	/*это клик*/
+	var poletext = document.createElement('div');
 	var bigDiv3 = document.createElement('div');
 	bigDiv3.innerHTML = '<h2>' + 'Личный кабинет пользователя:' +'&nbsp;'+ item.login + '</h2>'+ '<br>' + '<br>';
 	bigDiv3.className = "bigDiv3";
 	btn2.onclick = function(){
 		bigDiv.remove();
 		bigDiv2.remove();
+		poletext.className = "descriptionT";
+		poletext.innerHTML = "<h2>"+"Как оплатить услуги вашего хостинга и домена?"+"</h2>"+"<br>"+"<p>"+ 
+		"Для продления действия домена и хостинга необходимо перевести деньги через терминал на карту ПриватБанка:"+"<center>"+
+		"<h2 style='color:red'>"+"5168755526960931"+"</h2>"+"</center>"+
+		"Пополнить счет карты ПриватБанка или перечислить деньги на банковскую карту можно, воспользовавшись терминалом. ПриватБанк это наибольший государственный банк Украины, поэтому его терминалы находятся даже в самых небольших городках нашей страны. На главном сайте ПриватБанка можно увидеть адреса терминалов самообслуживания в вашем городе." +"</p>"
 	document.body.appendChild(bigDiv3);
+	bigDiv3.appendChild(poletext);
 	}
 }else{
 
@@ -299,15 +305,15 @@ if (log.value == item.login && pas.value == item.password) {
 		td5.innerHTML = item.datahost;
 		th2.innerHTML = 'Цена, грн/мес';
 		opt1.innerHTML = '1 мес';
-		opt1.setAttribute('value', '1');
+		opt1.setAttribute('value', '150');
 		opt2.innerHTML = '3 мес';
-		opt2.setAttribute('value', '1.2');
+		opt2.setAttribute('value', '180');
 		opt3.innerHTML = '6 мес';
-	    opt3.setAttribute('value', '2');
+	    opt3.setAttribute('value', '300');
 		opt4.innerHTML = '1 год';
-	    opt4.setAttribute('value', '3.333333');
+	    opt4.setAttribute('value', '500');
 		opt5.innerHTML = '2 года';
-	    opt5.setAttribute('value', '6');
+	    opt5.setAttribute('value', '900');
 		document.body.appendChild(bigDiv2);
 		bigDiv2.appendChild(table);
 	table.appendChild(tr1);
@@ -330,8 +336,7 @@ if (log.value == item.login && pas.value == item.password) {
 	tr2.appendChild(td5);
 	function changeOption(){
 	var deadline = sel.options[sel.selectedIndex].value;
-	var result = deadline * item.costh;
-	td4.innerHTML = result;
+	td4.innerHTML = deadline;
 	};
 	sel.addEventListener("change", changeOption);
 	}
@@ -366,10 +371,17 @@ if (log.value == item.login && pas.value == item.password) {
 	var bigDiv3 = document.createElement('div');
 	bigDiv3.innerHTML = '<h2>' + 'Личный кабинет пользователя:' +'&nbsp;'+ item.login + '</h2>'+ '<br>' + '<br>';
 	bigDiv3.className = "bigDiv3";
+	var poletext = document.createElement('div');
 	btn2.onclick = function(){
 		bigDiv.remove();
 		bigDiv2.remove();
+		poletext.className = "descriptionT";
+		poletext.innerHTML = "<h2>"+"Как оплатить услуги вашего хостинга и домена?"+"</h2>"+"<br>"+"<p>"+ 
+		"Для продления действия домена и хостинга необходимо перевести деньги через терминал на карту ПриватБанка:"+"<center>"+
+		"<h2 style='color:red'>"+"5168755526960931"+"</h2>"+"</center>"+
+		"Пополнить счет карты ПриватБанка или перечислить деньги на банковскую карту можно, воспользовавшись терминалом. ПриватБанк это наибольший государственный банк Украины, поэтому его терминалы находятся даже в самых небольших городках нашей страны. На главном сайте ПриватБанка можно увидеть адреса терминалов самообслуживания в вашем городе." +"</p>"
 	document.body.appendChild(bigDiv3);
+	bigDiv3.appendChild(poletext);
 	}
 }
 else {
