@@ -18,12 +18,12 @@ $('.contacts').click(function() {
    $('.locationSite:last').click(function() {
 	window.open('https://daribox.com/');
 });
-   $('.languageEn').click(function() {
-	location.href = "https://eduardbrazhnikov.githab.io/index_en.html";
-});
-   $('.languageRu').click(function() {
-	location.href = "https://eduardbrazhnikov.githab.io/";
-});
+   // $('.languageEn').click(function() {
+	// location.href = "https://eduardbrazhnikov.githab.io/index_en.html";
+// });
+   // $('.languageRu').click(function() {
+	// location.href = "https://eduardbrazhnikov.githab.io/";
+// });
 $(window).scroll(function() {
 if($(this).scrollTop() != 0) {
    $('.topButton').fadeIn();
