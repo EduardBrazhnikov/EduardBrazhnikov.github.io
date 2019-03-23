@@ -19,10 +19,10 @@ $('.contacts').click(function() {
 	window.open('https://daribox.com/');
 });
    $('.languageEn').click(function() {
-	location.href = "https://eduardbrazhnikov.githab.io/index_en.html";
+	location.href = "https://eduardbrazhnikov.github.io/index_en.html";
 });
    $('.languageRu').click(function() {
-	location.href = "https://eduardbrazhnikov.githab.io/";
+	location.href = "https://eduardbrazhnikov.github.io/";
 });
 $(window).scroll(function() {
 if($(this).scrollTop() != 0) {
