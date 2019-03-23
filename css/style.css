@@ -4,7 +4,7 @@ li {list-style-type: none;}
 html, body {height: 100%;}
 /*Шапка сайта*/
 header {background: url(../image/background-photo.jpg) no-repeat center center fixed; background-size: cover; width: 100%; min-height: 100%;}
-.allHead {background: rgba(0, 0, 0, 0.5); width: 100%; min-height: 100%;}
+.allHead {background: rgba(0, 0, 0, 0.5); width: 100%; height: 100%;}
 .circleAvatar {
 	width: 150px;
 	height: 150px;
