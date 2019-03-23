@@ -1,5 +1,5 @@
 "use strict"
-$(document).ready(function() { 
+// $(document).ready(function() { 
    // $('.buttonExample').click(function() {
 	// var h = $('.portfolio').offset();
 	// $('body,html').animate({scrollTop:h.top},700);
@@ -24,14 +24,14 @@ $(document).ready(function() {
    // $('.languageRu').click(function() {
 	// location.href = "https://eduardbrazhnikov.githab.io/";
 // });
-$(window).scroll(function() {
-if($(this).scrollTop() != 0) {
-   $('.topButton').fadeIn();
-} else {
-   $('.topButton').fadeOut();
-}
-});
-   $('.topButton').click(function() {
-   $('body,html').animate({scrollTop:0},700);
-});
-});
+// $(window).scroll(function() {
+// if($(this).scrollTop() != 0) {
+   // $('.topButton').fadeIn();
+// } else {
+   // $('.topButton').fadeOut();
+// }
+// });
+   // $('.topButton').click(function() {
+   // $('body,html').animate({scrollTop:0},700);
+// });
+// });
