@@ -1,17 +1,17 @@
 "use strict"
 $(document).ready(function() { 
-   $('.buttonExample').click(function() {
-	var h = $('.portfolio').offset();
-	$('body,html').animate({scrollTop:h.top},700);
-});	
-$('.contacts').click(function() {
-	var h = $('.contact').offset();
-	$('body,html').animate({scrollTop:h.top},700);
-});	 
-   $('.arrow').click(function() {
-	var h = $('.portfolio').offset();
-	$('body,html').animate({scrollTop:h.top},700);
-});
+   // $('.buttonExample').click(function() {
+	// var h = $('.portfolio').offset();
+	// $('body,html').animate({scrollTop:h.top},700);
+// });	
+// $('.contacts').click(function() {
+	// var h = $('.contact').offset();
+	// $('body,html').animate({scrollTop:h.top},700);
+// });	 
+   // $('.arrow').click(function() {
+	// var h = $('.portfolio').offset();
+	// $('body,html').animate({scrollTop:h.top},700);
+// });
    // $('.locationSite:first').click(function() {
 	// window.open('http://lending.hostenko.com/');
 // });
