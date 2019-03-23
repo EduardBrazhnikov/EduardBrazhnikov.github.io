@@ -49,9 +49,9 @@ h1, h2 {
 }
 .arrow {
 	position: absolute;
-	left: 48%;
+	left: calc(50% - 40px);
 	bottom: 1em;
-	font-size: 5em;
+	font-size: 80px;
 	cursor: pointer;
 	color: #fff;
 	transform: rotate(90deg);
