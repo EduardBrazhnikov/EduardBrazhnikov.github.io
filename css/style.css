@@ -90,8 +90,6 @@ h1, h2 {
 	justify-content: center;
 }
 .buttonExample, .contacts {
-	position: relative;
-	top: 2em;
 	width: 300px;
 	padding: 0.7em;
 	margin: 1em;
