@@ -12,18 +12,18 @@ $('.contacts').click(function() {
 	var h = $('.portfolio').offset();
 	$('body,html').animate({scrollTop:h.top},700);
 });
-   $('.locationSite:first').click(function() {
-	window.open('http://lending.hostenko.com/');
-});
-   $('.locationSite:last').click(function() {
-	window.open('https://daribox.com/');
-});
-   $('.languageEn').click(function() {
-	location.href = "https://eduardbrazhnikov.githab.io/index_en.html";
-});
-   $('.languageRu').click(function() {
-	location.href = "https://eduardbrazhnikov.githab.io/";
-});
+   // $('.locationSite:first').click(function() {
+	// window.open('http://lending.hostenko.com/');
+// });
+   // $('.locationSite:last').click(function() {
+	// window.open('https://daribox.com/');
+// });
+   // $('.languageEn').click(function() {
+	// location.href = "https://eduardbrazhnikov.githab.io/index_en.html";
+// });
+   // $('.languageRu').click(function() {
+	// location.href = "https://eduardbrazhnikov.githab.io/";
+// });
 $(window).scroll(function() {
 if($(this).scrollTop() != 0) {
    $('.topButton').fadeIn();
