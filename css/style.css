@@ -14,6 +14,7 @@ header {background: url(../image/background-photo.jpg) no-repeat center center f
 	overflow: hidden;
 	margin-top: 20px;
 	margin-right: 20px;
+	margin-left: 0.5em;
 	float: left;
 }
 .circleAvatar > img {
@@ -182,7 +183,7 @@ footer {
 	font-weight: 600;
 	color: #fff;
 }
-.soc, .contact {
+.soc, .contact, .location {
 	text-align: center;
 	margin-bottom: 1em;
 }
