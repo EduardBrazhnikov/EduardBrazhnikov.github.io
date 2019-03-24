@@ -18,6 +18,9 @@ $('.contacts').click(function() {
    $('.locationSite:last').click(function() {
 	window.open('https://daribox.com/');
 });
+   $('.repository:first').click(function() {
+	window.open('https://github.com/EduardBrazhnikov/landing1');
+});
    $('.languageEn').click(function() {
 	location.href = "https://eduardbrazhnikov.github.io/index_en.html";
 });
