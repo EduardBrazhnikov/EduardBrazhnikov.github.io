@@ -50,7 +50,7 @@ h1, h2 {
 .arrow {
 	position: absolute;
 	left: calc(50% - 40px);
-	bottom: 1em;
+	bottom: 0.5em;
 	font-size: 80px;
 	cursor: pointer;
 	color: #fff;
@@ -60,9 +60,9 @@ h1, h2 {
 	animation-iteration-count: infinite;
 }
 @keyframes moveArrow {
-  0% {bottom: 1em;}
-  50% {bottom: 1.5em;}
-  100% {bottom: 1em;}
+  0% {bottom: 0.5em;}
+  50% {bottom: 1em;}
+  100% {bottom: 0.5em;}
 }
 .langBlock {
 	position: absolute;
