@@ -21,6 +21,9 @@ $('.contacts').click(function() {
    $('.repository:first').click(function() {
 	window.open('https://github.com/EduardBrazhnikov/landing1');
 });
+   $('.repository:last').click(function() {
+	window.open('https://github.com/EduardBrazhnikov/daribox');
+});
    $('.languageEn').click(function() {
 	location.href = "https://eduardbrazhnikov.github.io/index_en.html";
 });
