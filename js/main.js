@@ -13,7 +13,7 @@ $('.contacts').click(function() {
 	$('body,html').animate({scrollTop:h.top},700);
 });
    $('.locationSite:first').click(function() {
-	window.open('http://lending.hostenko.com/');
+	window.open('http://lendingfirst.zzz.com.ua/');
 });
    $('.locationSite:last').click(function() {
 	window.open('https://daribox.com/');
