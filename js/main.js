@@ -12,17 +12,20 @@ $('.contacts').click(function() {
 	var h = $('.portfolio').offset();
 	$('body,html').animate({scrollTop:h.top},700);
 });
-   $('.locationSite:first').click(function() {
-	window.open('http://lendingfirst.zzz.com.ua/');
+   $('.locationSite:eq(0)').click(function() {
+	window.open('http://mylending.hostenko.com/');
+});
+$('.locationSite:eq(1)').click(function() {
+	window.open('https://daribox.com/');
 });
    $('.locationSite:last').click(function() {
-	window.open('https://daribox.com/');
+	window.open('http://lendingfirst.zzz.com.ua/');
 });
    $('.repository:first').click(function() {
 	window.open('https://github.com/EduardBrazhnikov/landing1');
 });
    $('.repository:last').click(function() {
-	window.open('https://github.com/EduardBrazhnikov/daribox');
+	window.open('https://github.com/EduardBrazhnikov/landing1');
 });
    $('.languageEn').click(function() {
 	location.href = "https://eduardbrazhnikov.github.io/index_en.html";
