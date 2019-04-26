@@ -21,8 +21,11 @@ $('.locationSite:eq(1)').click(function() {
    $('.locationSite:last').click(function() {
 	window.open('http://lendingfirst.zzz.com.ua/');
 });
-   $('.repository:first').click(function() {
-	window.open('https://github.com/EduardBrazhnikov/landing1');
+   $('.repository:eq(0)').click(function() {
+	window.open('');
+});
+$('.repository:eq(1)').click(function() {
+	window.open('https://github.com/EduardBrazhnikov/daribox');
 });
    $('.repository:last').click(function() {
 	window.open('https://github.com/EduardBrazhnikov/landing1');
