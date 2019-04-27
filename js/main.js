@@ -22,7 +22,7 @@ $('.locationSite:eq(1)').click(function() {
 	window.open('http://lendingfirst.zzz.com.ua/');
 });
    $('.repository:eq(0)').click(function() {
-	window.open('');
+	window.open('https://github.com/EduardBrazhnikov/Lending2');
 });
 $('.repository:eq(1)').click(function() {
 	window.open('https://github.com/EduardBrazhnikov/daribox');
