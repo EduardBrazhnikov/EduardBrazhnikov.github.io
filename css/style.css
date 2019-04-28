@@ -2,6 +2,23 @@
 a { text-decoration: none; color: #8B0000; font-weight: 600;}
 li {list-style-type: none;}
 html, body {height: 100%;}
+/*Прелоадер*/
+#before-load {
+    position: fixed; 
+    left: 0;
+    top: 0;
+    right: 0; 
+    bottom: 0;
+    background: #fff;
+    z-index: 100000;
+}
+#before-load i {
+    font-size: 140px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -70px 0 0 -70px;
+}
 /*Шапка сайта*/
 header {background: url(../image/background-photo.jpg) no-repeat center center fixed; background-size: cover; width: 100%; min-height: 100%;}
 .allHead {background: rgba(0, 0, 0, 0.5); width: 100%; min-height: 100vh; padding-top: 2em;}

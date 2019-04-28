@@ -1,4 +1,7 @@
 "use strict"
+$(function() {
+    $('#before-load').find('i').fadeOut().end().delay(400).fadeOut('slow');
+});
 $(document).ready(function() { 
    $('.buttonExample').click(function() {
 	var h = $('.portfolio').offset();
