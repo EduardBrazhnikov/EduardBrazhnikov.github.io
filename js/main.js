@@ -16,7 +16,7 @@ $('.contacts').click(function() {
 	$('body,html').animate({scrollTop:h.top},700);
 });
    $('.locationSite:eq(0)').click(function() {
-	window.open('http://mylending.hostenko.com/');
+	window.open('https://electric-nadom.com.ua/');
 });
 $('.locationSite:eq(1)').click(function() {
 	window.open('https://daribox.com/');
